@@ -13,7 +13,12 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx'],
     alias: {
-      '@components': path.resolve(__dirname, 'src/components/'),
+      '@components': path.resolve(__dirname, 'src/components'),
+      '@pages': path.resolve(__dirname, 'src/pages'),
+      '@containers': path.resolve(__dirname, 'src/containers'),
+      '@styles': path.resolve(__dirname, 'src/styles'),
+      '@hooks': path.resolve(__dirname, 'src/hooks'),
+      '@assets': path.resolve(__dirname, 'src/assets'),
     }
   },
   module: {
@@ -34,11 +39,10 @@ module.exports = {
         ]
       },
       {
-        test: /\.(css|scss)$/,
+        test: /\.(css)$/,
         use: [
           'style-loader',
-          'css-loader',
-          'sass-loader'
+          'css-loader'
         ]
       },
       {

@@ -1,0 +1,24 @@
+@import url('Buttons.css');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+  background-color: var(--color-body);
+}
+
+:root{
+  --color-body: #1c1e21;
+  --color-white-hover: rgb(189, 189, 189);
+  --color-white: rgb(255, 255, 255);
+  --color-blue: rgb(67, 137, 230);
+  --color-blue-hover: rgb(52, 106, 255);
+  --color-green: rgb(0, 190, 0);
+  --color-green-hover: rgb(75, 224, 75);
+  --color-red: rgb(255, 52, 52);
+  --color-red-hover: rgb(255, 95, 95);
+  --color-dark: #292b30;
+  --color-dark-hover: #444950;
+}
