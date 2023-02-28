@@ -1,19 +1,19 @@
 import React from 'react';
 
-const Card = () => {
+const Card = ({item}) => {
   return (
     <div className='card'>
       <div className='card-header'>
         <div>
-          <h2>Edwin</h2>
-          <h3>Garcia Quiterio</h3>
+          <h2>{item.nombre}</h2>
+          <h3>{item.apellidos}</h3>
         </div>
       </div>
       <div className="card-body">
-        <span>18060002</span>
-        <span>edwinegq@outlook.com</span>
-        <span>Los Chegües Guerrero Mexico</span>
-        <span>22 Años</span>
+        <span>{item.id}</span>
+        <span>{item.email}</span>
+        <span>{item.address}</span>
+        <span>{item.edad} Ages</span>
       </div>
       <div className='card-footer'>
         <button className='btn btn-yellow'>Actualizar</button>

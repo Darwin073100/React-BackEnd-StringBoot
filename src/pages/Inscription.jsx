@@ -11,18 +11,8 @@ const Inscription = () => {
   return (
     <div className='entity'>
       <Title>
-        <Header />
+        <Header title='Inscriptions'/>
       </Title>
-      <Body>
-        <Menu />
-        <Container>
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-        </Container>
-      </Body>
     </div>
   );
 }
