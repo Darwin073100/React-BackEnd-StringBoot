@@ -1,0 +1,29 @@
+.form-entity .form{
+  background-color: var(--color-dark);
+  border-radius: 4px;
+}
+
+.form-entity .form-header h2{
+  padding-top: 10px;
+  text-align: center;
+  color: var(--color-blue);
+}
+
+.form-entity .form-body{
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+}
+
+.form-entity .form-body input{
+  font-size: 15px;
+  padding: 4px;
+  margin-bottom: 4px;
+  outline-color: var(--color-blue);
+}
+
+.form-entity .form-footer{
+  padding: 0 8px 8px 8px;
+  display: flex;
+  justify-content: space-around;
+}

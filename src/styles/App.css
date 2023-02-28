@@ -1,13 +1,4 @@
 @import url('Buttons.css');
-*{
-  margin: 0;
-  padding: 0;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-body{
-  background-color: var(--color-body);
-}
 
 :root{
   --color-body: #1c1e21;
@@ -23,4 +14,19 @@ body{
   --color-yellow-hover: rgb(255, 191, 95);
   --color-dark: #292b30;
   --color-dark-hover: #444950;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+  background-color: var(--color-body);
+}
+
+#root{
+  position: absolute;
+  width: 100%;
 }
