@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router';
 const ButtonLink = ({image, path, hin}) => {
   const navigate = useNavigate();
   return (
-    <button className="item btn-dark"
+    <button className="item btn btn-dark"
       onClick={()=>navigate(path)}
     >
       <img src={image} alt={hin} />

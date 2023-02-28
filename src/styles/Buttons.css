@@ -1,22 +1,97 @@
+.btn{
+  color: var(--color-white);
+  font-size: 15px;
+  padding: 4px;
+  cursor: grab;
+  border-radius: 4px;
+}
+/* ---------------------WHITE-------------------------- */
 .btn-white{
   background-color: var(--color-white);
-  border-radius: 4px;
   border: 2px solid var(--color-white);
-  cursor: grab;
 }
 
+/* ---------------------BLUE---------------------- */
+.btn-blue{
+  background-color: var(--color-blue);
+  border: 2px solid var(--color-blue);
+}
+
+.btn-blue:hover{
+  background-color: var(--color-blue-hover);
+}
+
+.btn-blue:active{
+  background-color: var(--color-blue);
+}
+
+/* ---------------------BLUE---------------------- */
+.btn-green{
+  background-color: var(--color-green);
+  border: 2px solid var(--color-green);
+}
+
+.btn-green:hover{
+  background-color: var(--color-green-hover);
+}
+
+.btn-green:active{
+  background-color: var(--color-green);
+}
+
+/* -----------------------YELLOW------------------------------- */
+.btn-yellow{
+  background-color: var(--color-yellow);
+  border: 2px solid var(--color-yellow);
+}
+
+.btn-yellow:hover{
+  background-color: var(--color-yellow-hover);
+}
+
+.btn-yellow:active{
+  background-color: var(--color-yellow);
+}
+
+/* -----------------------YELLOW------------------------------- */
+.btn-yellow{
+  background-color: var(--color-yellow);
+  border: 2px solid var(--color-yellow);
+}
+
+.btn-yellow:hover{
+  background-color: var(--color-yellow-hover);
+}
+
+.btn-yellow:active{
+  background-color: var(--color-yellow);
+}
+
+/* ------------------------RED----------------------------- */
+.btn-red{
+  background-color: var(--color-red);
+  border: 2px solid var(--color-red);
+}
+
+.btn-red:hover{
+  background-color: var(--color-red-hover);
+}
+
+.btn-red:active{
+  background-color: var(--color-red);
+}
+
+/* ---------------------DARK---------------------- */
 .btn-dark{
   background-color: var(--color-dark);
-  border-radius: 4px;
   border: 2px solid var(--color-dark);
-  cursor: grab;
 }
 
 .btn-dark:hover{
   background-color: var(--color-dark-hover);
-  border: 2px solid var(--color-dark);
 }
 
 .btn-dark:active{
   background-color: var(--color-dark);
 }
+

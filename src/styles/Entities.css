@@ -1,0 +1,57 @@
+.entity .title button{
+  margin-right: 4px;
+}
+
+.content .menu{
+  border-bottom: 2px solid var(--color-dark-hover);
+}
+
+.content .menu button{
+  margin: 8px 4px;
+}
+
+.container{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 250px);
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.card{
+  background-color: var(--color-dark);
+  border-radius: 4px;
+}
+
+.card-header{
+  padding: 8px;
+}
+
+.card-header > div{
+  background-color: var(--color-dark-hover);
+  padding: 4px;
+  border-radius: 4px;
+  color: var(--color-white);
+}
+.card-body{
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card-body span{
+  background-color: var(--color-dark-hover);
+  padding: 4px;
+  border-radius: 4px;
+  color: var(--color-white);
+}
+.card-footer{
+  border-top: 1px solid var(--color-dark-hover);
+  padding: 8px;
+}
+
+.card-footer button{
+  margin-right: 8px;
+}

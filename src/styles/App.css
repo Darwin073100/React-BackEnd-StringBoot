@@ -14,11 +14,13 @@ body{
   --color-white-hover: rgb(189, 189, 189);
   --color-white: rgb(255, 255, 255);
   --color-blue: rgb(67, 137, 230);
-  --color-blue-hover: rgb(52, 106, 255);
-  --color-green: rgb(0, 190, 0);
-  --color-green-hover: rgb(75, 224, 75);
+  --color-blue-hover: rgb(103, 144, 255);
+  --color-green: rgb(21, 104, 0);
+  --color-green-hover: rgb(18, 214, 18);
   --color-red: rgb(255, 52, 52);
   --color-red-hover: rgb(255, 95, 95);
+  --color-yellow: rgb(255, 174, 52);
+  --color-yellow-hover: rgb(255, 191, 95);
   --color-dark: #292b30;
   --color-dark-hover: #444950;
 }
