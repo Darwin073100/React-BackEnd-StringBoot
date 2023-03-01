@@ -1,4 +1,5 @@
 @import url('Buttons.css');
+@import url('Notification.css');
 
 :root{
   --color-body: #1c1e21;

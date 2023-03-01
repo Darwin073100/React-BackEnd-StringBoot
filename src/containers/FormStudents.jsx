@@ -67,7 +67,9 @@ const FormStudents = ({modalActions, actions, atribs}) => {
         </div>
         <div className='form-footer'>
           <Button style='btn-blue' text='Ok' event={handleSubmit} />
-          <Button style='btn-green' text='Llenar' event={fullInputs}/>
+          {modalActions.modalType.update == true &&
+            <Button style='btn-green' text='Llenar' event={fullInputs}/>
+          }
           <Button style='btn-yellow' text='Clear Inputs' event={clearInputs}/>
           <Button style='btn-red' text='Close' event={close}/>
         </div>
@@ -76,4 +78,4 @@ const FormStudents = ({modalActions, actions, atribs}) => {
   );
 }
 
-export default FormStudents;
+export { FormStudents };

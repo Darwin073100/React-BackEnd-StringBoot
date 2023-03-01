@@ -1,11 +1,11 @@
 import React from 'react';
-import '@styles/Title.css';
 
-const Title = ({children}) => {
+const Title = ({title}) => {
+
   return (
-    <div className='title'>
-      {children}
-    </div>
+    <>
+        <h1 className='h1'>Template {title}</h1>
+    </>
   );
 }
 

@@ -1,0 +1,52 @@
+.ntf-white{
+  background-color: var(--color-dark-hover);
+  font-size: 15px;
+  padding: 4px;
+  border-radius: 14px;
+  border: 1px ridge var(--color-white);
+  color: var(--color-white);
+}
+
+.ntf-green{
+  background-color: var(--color-white);
+  opacity: 90%;
+  font-size: 15px;
+  padding: 8px;
+  border-radius: 8px;
+  text-align: center;
+  border: 2px solid var(--color-green);
+  color: var(--color-green);
+  position: absolute;
+  z-index: 1;
+  top: 85px;
+}
+
+.ntf-yellow{
+  background-color: var(--color-white);
+  opacity: 90%;
+  font-size: 15px;
+  padding: 8px;
+  border-radius: 8px;
+  text-align: center;
+  border: 2px solid var(--color-yellow);
+  color: var(--color-yellow);
+  position: absolute;
+  z-index: 1;
+  width: 200px;
+  top: 85px;
+}
+
+.ntf-red{
+  background-color: var(--color-white);
+  opacity: 90%;
+  font-size: 15px;
+  padding: 8px;
+  border-radius: 8px;
+  text-align: center;
+  border: 2px solid var(--color-red);
+  color: var(--color-red);
+  position: absolute;
+  z-index: 1;
+  width: 200px;
+  top: 85px;
+}

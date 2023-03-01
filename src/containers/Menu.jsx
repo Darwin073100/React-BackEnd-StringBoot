@@ -11,10 +11,10 @@ const Menu = ({modalActions}) => {
 
   return (
     <div className='menu'>
-      <button className='btn btn-blue' onClick={()=> navigate(-1)}>Home</button>
+      <button className='btn btn-dark' onClick={()=> navigate(-1)}>Home</button>
       <button className='btn btn-blue' onClick={()=> navigate('/careers')}>Careers</button>
       <button className='btn btn-blue' onClick={()=> navigate('/inscriptions')}>Inscription</button>
-      <button className='btn btn-dark' onClick={()=> navigate('/students')}>Students</button>
+      <button className='btn btn-blue' onClick={()=> navigate('/students')}>Students</button>
       <button className='btn btn-green' onClick={handleModal}>Register</button>
     </div>
   );

@@ -1,7 +1,3 @@
-.entity .title button{
-  margin-right: 4px;
-}
-
 .content .menu{
   border-bottom: 2px solid var(--color-dark-hover);
 }

@@ -33,7 +33,7 @@ class StudentsService{
     const res = await fetch(`${API}/persona/${id}`,{
       method: 'DELETE'
     });
-    return res.body;
+    return res;
   }
 }
 

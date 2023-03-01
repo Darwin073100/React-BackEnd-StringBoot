@@ -1,7 +1,7 @@
 import React from 'react';
 import { ButtonLink } from '@components/ButtonLink';
 import { MenuHome } from '@containers/MenuHome';
-import { Title } from '../containers/Title';
+import { Header } from '@containers/Header';
 import student from '@assets/persona.svg';
 import career from '@assets/carrera.svg';
 import inscription from '@assets/inscription.svg';
@@ -17,9 +17,9 @@ const links = [
 const Home = () => {
   return (
     <div className='home'>
-      <Title>
+      <Header>
         <h1 className='h1'>Crud to Api Rest in Spring Boot</h1>
-      </Title>
+      </Header>
       <MenuHome>
         {links.map( item => (<ButtonLink
           image={ item.image }

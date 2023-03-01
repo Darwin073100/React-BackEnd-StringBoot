@@ -1,11 +1,11 @@
 import React from 'react';
+import '@styles/Header.css';
 
-const Header = ({title}) => {
-
+const Header= ({children}) => {
   return (
-    <>
-        <h1 className='h1'>Template {title}</h1>
-    </>
+    <div className='header'>
+      {children}
+    </div>
   );
 }
 
