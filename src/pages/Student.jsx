@@ -4,14 +4,14 @@ import { Header } from '@containers/Header';
 import { Container } from '@containers/Container';
 import { Menu } from '@containers/Menu';
 import { Body } from '@containers/Body';
-import { Card } from '@containers/Card';
+import { CardStudent } from '@containers/CardStudent';
 import { useStudents } from '@hooks/useStudents';
 import { Modal } from '@containers/Modal';
 import { FormStudents } from '@containers/FormStudents';
 import '@styles/Entities.css';
 
 const Student = () => {
-  const [students, actions, modalActions, atribs,not] = useStudents();
+  const [students, actions, modalActions, atribs, not] = useStudents();
   return (
     <div className='entity'>
       <Header>
@@ -21,7 +21,7 @@ const Student = () => {
       <Body>
         <Menu modalActions={modalActions}/>
         <Container>
-          {students.map(item => <Card
+          {students.map(item => <CardStudent
             item={item}
             modalActions={modalActions}
             actions={actions}

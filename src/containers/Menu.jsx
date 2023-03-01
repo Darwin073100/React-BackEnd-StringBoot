@@ -11,7 +11,7 @@ const Menu = ({modalActions}) => {
 
   return (
     <div className='menu'>
-      <button className='btn btn-dark' onClick={()=> navigate(-1)}>Home</button>
+      <button className='btn btn-dark' onClick={()=> navigate('/')}>Home</button>
       <button className='btn btn-blue' onClick={()=> navigate('/careers')}>Careers</button>
       <button className='btn btn-blue' onClick={()=> navigate('/inscriptions')}>Inscription</button>
       <button className='btn btn-blue' onClick={()=> navigate('/students')}>Students</button>
