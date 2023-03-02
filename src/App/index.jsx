@@ -5,10 +5,13 @@ import { Career } from '@pages/Career';
 import { Student } from '@pages/Student';
 import { Inscription } from '@pages/Inscription';
 import '@styles/App.css';
+import { Figuras } from '../containers/FiguraBackground';
 
 const App = () => {
   return (
     <>
+    <Figuras />
+    <div className='frond'>
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home />}/>
@@ -18,6 +21,7 @@ const App = () => {
           <Route path='*' element={<p>Not Found</p>}/>
         </Routes>
       </BrowserRouter>
+    </div>
     </>
   );
 }

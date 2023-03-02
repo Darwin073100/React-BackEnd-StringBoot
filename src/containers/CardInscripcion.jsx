@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from '../components/Button';
 import { Column } from '../components/Column';
 
-const CardCareer = ({item, actions, modalActions}) => {
+const CardInscription = ({item, actions, modalActions}) => {
   const handleModal = (e)=>{
     actions.findById(item.id)
     modalActions.modalUpdate()
@@ -13,15 +13,17 @@ const CardCareer = ({item, actions, modalActions}) => {
     <div className='card'>
       <div className='card-header'>
         <div>
-          <h2>{item.alias}</h2>
-          <h3>{item.nombre}</h3>
+          <h2>{item.persona?.nombre}</h2>
+          <h3>{item.carrera?.alias}</h3>
         </div>
       </div>
       <div className="card-body">
-      <Column>{item.id}</Column>
-        <Column>{item.servicio}</Column>
-        <Column>{item.residencia}</Column>
-        <Column>{item.creditos} Ages</Column>
+        <Column>{item.id}</Column>
+        <Column><strong>studentId: </strong>{item.idPersona}</Column>
+        <Column>{item.persona?.nombre} {item.persona?.apellidos}</Column>
+        <Column><strong>careerId: </strong>{item.idCarrera}</Column>
+        <Column>{item.carrera?.nombre}</Column>
+        <Column>{new Date(item.fecha).toLocaleString()}</Column>
       </div>
       <div className='card-footer'>
         <Button event={handleModal} style='btn-yellow' text='Update'/>
@@ -31,4 +33,4 @@ const CardCareer = ({item, actions, modalActions}) => {
 );
 }
 
-export { CardCareer };
+export { CardInscription };

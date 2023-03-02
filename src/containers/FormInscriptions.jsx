@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import { Button } from '../components/Button';
 import '@styles/FormStudent.css';
 
-const FormCareers = ({modalActions, actions, atribs}) => {
+const FormInscriptions = ({modalActions, actions, atribs}) => {
   const form = useRef(null);
 
   const handleSubmit = (e)=>{
@@ -10,11 +10,8 @@ const FormCareers = ({modalActions, actions, atribs}) => {
     const formData = new FormData(form.current);
 
     let data = {
-      nombre:formData.get('nombre'),
-      alias:formData.get('alias'),
-      creditos:formData.get('creditos'),
-      servicio: formData.get('servicio'),
-      residencia:formData.get('residencia'),
+      idPersona:formData.get('personaId'),
+      idCarrera:formData.get('carreraId'),
     }
 
     if(modalActions.modalType.save == true){
@@ -22,7 +19,10 @@ const FormCareers = ({modalActions, actions, atribs}) => {
       actions.save(data);
     } else if(modalActions.modalType.update == true){
       console.log('update')
-      data={...data, id:formData.get('id')};
+      data = {...data,
+        id:formData.get('id'),
+        fecha:formData.get('fecha')
+      };
       actions.update(data);
     }
     close(e);
@@ -42,30 +42,32 @@ const FormCareers = ({modalActions, actions, atribs}) => {
   const fullInputs =(e)=>{
     e.preventDefault();
     const inputs = document.querySelectorAll('input');
+    // Modificamos el formato de la fecha que viene de la API
+    let fecha = new Date(atribs.inscription.fecha);
+    fecha.setMinutes(fecha.getMinutes() - fecha.getTimezoneOffset());
+    console.log(fecha.toISOString().slice(0,16));
 
-    inputs[0].value=atribs.career.id;
-    inputs[1].value=atribs.career.nombre;
-    inputs[2].value=atribs.career.alias;
-    inputs[3].value=atribs.career.creditos;
-    inputs[4].value=atribs.career.servicio;
-    inputs[5].value=atribs.career.residencia;
+    inputs[0].value=atribs.inscription.id;
+    inputs[1].value=atribs.inscription.idPersona;
+    inputs[2].value=atribs.inscription.idCarrera;
+    inputs[3].value=fecha.toISOString().slice(0,16);
   }
 
   return (
     <form className='form-entity' ref={form}>
       <div className='form'>
         <div className='form-header'>
-          <h2>Careers</h2>
+          <h2>Inscriptions</h2>
         </div>
         <div className='form-body'>
           {modalActions.modalType.save === !true &&
-            <input placeholder='Number of control' type="text" name='id' id='txtId'/>
+            <input placeholder='Id' type="text" name='id' id='txtId'/>
           }
-          <input placeholder='Write one name' type="text" name='nombre'/>
-          <input placeholder='Write one alias' type="text" name='alias' />
-          <input placeholder='Write number credits' type="number" name='creditos'/>
-          <input placeholder='Write months in service' type="text" name='servicio'/>
-          <input placeholder='Write months in residence' type="text" name='residencia'/>
+          <input placeholder='Write id of the person' type="text" name='personaId'/>
+          <input placeholder='Write id of the career' type="text" name='carreraId' />
+          {modalActions.modalType.save === !true &&
+            <input placeholder='Write the date' type="datetime-local" name='fecha'/>
+          }
         </div>
         <div className='form-footer'>
           <Button style='btn-blue' text='Ok' event={handleSubmit} />
@@ -80,4 +82,4 @@ const FormCareers = ({modalActions, actions, atribs}) => {
   );
 }
 
-export { FormCareers };
+export { FormInscriptions };

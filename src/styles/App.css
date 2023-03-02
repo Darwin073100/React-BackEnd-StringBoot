@@ -30,4 +30,11 @@ body{
 #root{
   position: absolute;
   width: 100%;
+  z-index: 2;
+}
+
+.frond{
+  width: 100%;
+  position: absolute;
+  z-index: 2;
 }
