@@ -1,5 +1,7 @@
 .content .menu{
   border-bottom: 2px solid var(--color-dark-hover);
+  display: flex;
+  justify-content: center;
 }
 
 .content .menu button{
